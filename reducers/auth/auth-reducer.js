@@ -1,6 +1,6 @@
 import * as actions from './auth-actions'
 
-export default function (state = {authenticated: true}, action) {
+export default function (state = {}, action) {
   switch (action.type) {
     case actions.SIGN_IN_SUCCESS:
       return { ...state, authenticated: true, error: null };
